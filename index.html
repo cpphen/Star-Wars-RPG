@@ -6,13 +6,53 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!-- Added link to the jQuery Library -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "assets/javascript/game.js"></script>
+
 
 </head>
 <body>
-    <div class = "background">
-
+    <div class = "characters">
+        <div class="charContainer darth" data-hpp = "120" data-attack = "10" data-cattack = "20" data-name = "Darth Vader">
+            <h2 id="c1"></h2>
+            <img class="vade" src="assets/images/vader.jpg">
+            <p class="health" id="c1hp" data-hp = "120"></p>
+        </div>
+        <div class="charContainer luke" data-hpp = "100" data-attack = "10" data-cattack = "18" data-name = "Luke Skywalker">
+            <h2 id="c2"></h2>
+            <img class="skywalker" src="assets/images/luke.jpg">
+            <p class="health" id="c2hp" data-hp = "100"></p>
+        </div>
+        <div class="charContainer won" data-hpp = "150" data-attack = "15" data-cattack = "15" data-name = "Obi Won">
+            <h2 id="c3"></h2>
+            <img class="obi" src="assets/images/obiwan.jpg">
+            <p class="health" id="c3hp" data-hp = "150"></p>
+        </div>
+        <div class="charContainer maul" data-hpp = "180" data-attack = "20" data-cattack = "25" data-name = "Darth Maul">
+            <h2 id="c4"></h2>
+            <img class="dmaul" src="assets/images/maul.png">
+            <p class="health" id="c4hp" data-hp = "180"></p>
+        </div>
     </div>
+    <div id="your">
+        <h2>Your Character</h2>
+        <!-- <img class="dmaul" src="assets/images/maul.png"> -->
+    </div>
+    <div id="enemies">
+        <h2>Enemies</h2>
+        <!-- <img class="dmaul" src="assets/images/maul.png"> -->
+    </div>
+    <div id="fightSection">
+        <h2>Fight Section</h2>
+        <button id="attack" class="attk"><h1>Attack</h1></button>
+    </div>
+    <div id="fighter">
+        <h2>Opponent</h2>
+        <!-- <img class="dmaul" src="assets/images/maul.png"> -->
+    </div>
+    <div class="FightProgress"></div>
+    <div class="lose"></div>
+    <iframe id="video" width="100" height="50" src="https://www.youtube.com/embed/qrVKmTPFYZ8?autoplay=1" frameborder="0" allowfullscreen></iframe>
 
 	
 </body>

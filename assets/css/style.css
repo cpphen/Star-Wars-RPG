@@ -1,5 +1,124 @@
-div.background
+body
 {
 	background-image: url(../images/background.jpg);
-	background-size: cover;
+	/*background-size: ;*/
+	overflow: auto;
+	color: white;
 }
+        .characters
+        {
+            width: 100%;
+            overflow: auto;
+            margin-left: 50px;
+        }
+        .vade, .skywalker, .obi, .dmaul
+        {
+            width: 130px;
+            height: 100px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 35px;
+        }
+
+        .charContainer
+        {
+            width: 200px;
+            height: 170px;
+            float: left;
+            border: solid;
+            border-color: green; 
+            background-color: white;
+            color: black;
+        }
+        h2
+        {
+            font-size: 30px;
+            width: 100%;
+            /*margin-left: 50px;*/
+        }
+        #your, #fighter
+        {
+            width: 230px;
+            height: 200px;
+            margin-left: 50px;
+            /*overflow: auto*/
+        }
+        .lose
+        {
+            width: 200px;
+            height: 50px;
+            margin-top: 30px;
+            margin-left: 50px;
+            font-size: 40px;
+        }
+        #enemies
+        {
+            width: 100%;
+            overflow: auto;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+        #c1, #c2, #c3, #c4
+        {
+            width: 100%;
+            font-size: 20px;
+        }
+        #c1
+        {
+            margin-left: 55px;
+        }
+        #c2
+        {
+            margin-left: 35px;
+        }
+        #c3
+        {
+            margin-left: 65px;
+        }
+        #c4
+        {
+            margin-left: 55px;
+        }
+        #c1hp, #c2hp, #c3hp, #c4hp
+        {
+            text-align: center;
+        }
+        .foes /*This class was made in the jquery not html. This is so that the background color only changes when the jquery uses the addClass 'foes' so that your chosen character will not be affected.*/
+        {
+            width: 200px;
+            height: 170px;
+            float: left;
+            border: solid;
+            border-color: green;
+            background-color: red;
+        }
+        #fightSection
+        {
+            margin-left: 50px;
+        }
+        #resetButton
+        {
+            width: 150px;
+            height: 40px;
+            font-size: 25px;
+        }
+        .oppName, .oppName2
+        {
+            font-size: 20px;
+            /*margin-top: 10px;*/
+            width: 450px;
+        }
+        .oppName2
+        {
+            margin-top: 10px;
+        }
+        .FightProgress
+        {
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 500px;
+        }
+        .black
+        {
+            background-color: blue;
+        }
