@@ -4,4 +4,4 @@
 
 - User chooses one character and then has to defeat every unchosen character until either player loses or defeats all opponents.
 
-- Demonstrates heavy use of JQuery
+- Demonstrates heavy use of JQuery / JavaScript
